@@ -1,0 +1,10 @@
+{
+    "Name": "[CP]SuanNi",
+    "Author": "SuanNi",
+    "Version": "1.0",
+    "Description": "SuanNi",
+    "UniqueID": "SuanNi",
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

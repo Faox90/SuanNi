@@ -1,0 +1,33 @@
+{
+	    "Changes":[
+        {"Action":"EditData",
+        "Target":"Data/Weapons",
+        "Entries":{
+        "SuanNi_Sword":{
+	"Name": "YinYun",
+        "DisplayName":"Mist",
+	"Description": "The sword is made of the mist of the Suanni. The dense mist is wrapped around the sword, which is warm and smooth, and can cut jade like mud.。",
+	"Type": "0",//sword dagger hammer
+	"MinDamage": 100,//Minimum damage
+	"MaxDamage": 300,//Maximum Damage
+	"Knockback": 2.0,//repel
+	"Speed": 9,//speed
+	"Precision": 100,//Accuracy
+	"Defense": 3,//defense
+	"MineDropVar": 0,
+	"MineDropMinimumLevel": -1,
+	"ExtraSwingArea": 1,//Extra distance
+	"CritChance": 1.3,//Critical Hit Rate
+	"CritMultiplier": 2,//How many times the critical hit damages
+        "Texture":"Mods\\SuanNi\\Sword",
+        "SpriteIndex":0
+}
+}
+},
+{       
+        "Action": "Load",
+        "Target":"Mods/SuanNi/Sword",
+        "FromFile": "assets/Weapons/Yin_Yun/YinYun.png",
+},
+]
+}

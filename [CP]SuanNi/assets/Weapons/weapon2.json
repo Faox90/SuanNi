@@ -1,0 +1,33 @@
+{
+	    "Changes":[
+        {"Action":"EditData",
+        "Target":"Data/Weapons",
+        "Entries":{
+        "SuanNi_dagger":{
+	"Name": "YanWu",
+        "DisplayName":"Nightmare Mist",
+	"Description": "The dagger was made of the mist of the Suanni. The blood-red mist was wrapped around the dagger, like thorns.。",
+	"Type": "1",//Sword dagger hammer
+	"MinDamage": 70,//Minimum damage
+	"MaxDamage": 200,//Maximum Damage
+	"Knockback": 0.3,//repel
+	"Speed": 0,//speed
+	"Precision": 100,//Accuracy
+	"Defense": 0,//defense
+	"MineDropVar": 0,
+	"MineDropMinimumLevel": -1,
+	"ExtraSwingArea": 1,//Extra distance
+	"CritChance": 1.5,//Critical Hit Rate
+	"CritMultiplier": 3,//How many times the critical hit damages
+        "Texture":"Mods\\SuanNi\\dagger",
+        "SpriteIndex":0
+}
+}
+},
+{       
+        "Action": "Load",
+        "Target":"Mods/SuanNi/dagger",
+        "FromFile": "assets/Weapons/Yan_Wu/YanWu.png",
+},
+]
+}

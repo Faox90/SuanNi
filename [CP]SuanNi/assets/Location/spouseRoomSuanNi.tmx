@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="7">
+ <properties>
+  <property name="DayTiles" value="Buildings 1 0 256 Buildings 1 1 288"/>
+  <property name="Light" value="5 6 4"/>
+  <property name="NightTiles" value="Buildings 1 0 1222 Buildings 1 1 1254"/>
+ </properties>
+ <tileset firstgid="1" source="SN_picture material.tsx"/>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYAJiZiBmAWJWIGYDYm4g5gFiXiDmA2J+IBYAYh8ohgEYP2yQYQCFlA2v
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="12" name="Back2" width="6" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAOnKCYVOAOxB5I/EggjgLiQCAOIsM8cgEARj8Cag==
+  </data>
+ </layer>
+ <objectgroup id="11" name="Back2"/>
+ <layer id="3" name="Buildings" width="6" height="9">
+  <data encoding="base64" compression="zlib">
+   eJyFzDsOQAAAREEl7uDbkqDgABKfjgT3v4opRcFLpttsEHw3vkzMJKRU1GzsLKz0DD/fGTkF5c/22cHJRUNLR0hEzA2YzgXo
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Front" width="6" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA9EAViMSAWB2IJLPL2QOwAxI5o4p5A7AXE3mTYCQCT8AH5
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="10" name="Paths" width="6" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYBieAAAA2AAB
+  </data>
+ </layer>
+ <objectgroup id="9" name="Paths"/>
+ <layer id="7" name="AlwaysFront" width="6" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgcAZiFwZM4AvEfljEw4E4Aos4PqALxHpArEyiPnIBAIRLAlA=
+  </data>
+ </layer>
+ <objectgroup id="8" name="AlwaysFront"/>
+</map>

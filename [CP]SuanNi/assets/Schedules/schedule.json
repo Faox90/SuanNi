@@ -1,0 +1,19 @@
+{
+    "spring": "930 Town 29 57 2/1130 Town 76 95 2/1500 Beach 20 24 2/1700 Beach 12 39 2 SuanNi_mist \"Strings\\schedules\\SuanNi:mist.000\"",
+    "GreenRain": "610 Mountain 68 24 2 SuanNi_mist \"Strings\\schedules\\SuanNi:mist.002\"",
+    "marriage_Mon": "830 Town 49 32 2/1000 Mountain 56 21 3/1500 Beach 20 24 2/1800 bed",
+    "marriage_Fri": "830 Forest 83 51 2/1400 Town 76 95 2/1600 Town 81 95 2/1900 Saloon 23 18 2/2200 bed",
+    "summer": "930 Town 29 57 2/1130 Town 76 95 2/1500 Beach 20 24 2/1700 Beach 12 39 2 SuanNi_mist \"Strings\\schedules\\SuanNi:mist.000\"",
+    "fall": "930 Town 29 57 2/1130 Town 76 95 2/1500 Beach 20 24 2/1700 Beach 12 39 2 SuanNi_mist \"Strings\\schedules\\SuanNi:mist.000\"",
+    "winter": "930 Town 29 57 2/1130 Town 76 95 2/1500 Beach 20 24 2/1700 Beach 12 39 2 SuanNi_mist \"Strings\\schedules\\SuanNi:mist.000\"",
+
+    "DesertFestival_1": "900 Desert 13 62 2 SuanNi \"Strings\\schedules\\SuanNi:mist.003\"/1500 Desert 32 68 2 SuanNi_mist \"Strings\\schedules\\SuanNi:mist.003\"/1900 Desert 13 62 2 SuanNi_mist \"Strings\\schedules\\SuanNi:mist.003\"/2400 Town 78 95 2",
+   "DesertFestival_2": "900 Desert 6 12 1 \"Strings\\schedules\\SuanNi:mist.005\"/1300 Desert 9 10 2 \"Strings\\schedules\\SuanNi:mist.005\"/1500 Desert 6 12 1 \"Strings\\schedules\\SuanNi:mist.005\"/2400 Town 78 95 2",
+   "DesertFestival_3": "1000 Desert 45 54 2 \"Strings\\schedules\\SuanNi:mist.007\"/1800 Desert 34 5 2 \"Strings\\schedules\\SuanNi:mist.009\"/2400 Town 78 95 2",
+
+    "marriage_DesertFestival_1": "/900 Desert 13 62 2 \"Strings\\schedules\\SuanNi:mist.004\"/1500 Desert 32 68 2 \"Strings\\schedules\\SuanNi:mist.004\"/1900 Desert 13 62 2 \"Strings\\schedules\\SuanNi:mist.004\"/2410 bed",
+    "marriage_DesertFestival_2": "/900 Desert 6 12 1 \"Strings\\schedules\\SuanNi:mist.006\"/1300 Desert 9 10 2 \"Strings\\schedules\\SuanNi:mist.006\"/1500 Desert 6 12 1 \"Strings\\schedules\\SuanNi:mist.006\"/2410 bed",
+    "marriage_DesertFestival_3": "/1000 Desert 45 54 2 \"Strings\\schedules\\SuanNi:mist.008\"/1400 Desert 7 7 1 \"Strings\\schedules\\SuanNi:mist.010\"/2410 bed",
+
+   "rain": "1000 Mountain 56 21 3/1300 Saloon 21 17 2\"Strings\\schedules\\SuanNi:bar.000\"/2000 Town 91 5 2 SuanNi_mist \"Strings\\schedules\\SuanNi:mist.001\""
+}

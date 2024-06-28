@@ -1,0 +1,605 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+
+    {
+      "LogName": "NPC Manifestation",
+       "Action": "Include",
+      "FromFile": "assets/disposition/Disposition.json"
+    },
+    {//Gift preferences
+     "LogName": "NPC Gift Tastes",
+     "Action": "EditData",
+     "Target": "Data/NPCGiftTastes",
+     "Entries": {
+      "SuanNi": "Thank you for your kindness, I will cherish it/434 102 109 275 114 163 202 260/Thank you very much, this is very much to my heart/74 210 70/Thank you for your trouble./128 153 66 78/...Could I have been cheated?/167 171 170 346 348/Yes, this is what you like now?/16 18 22 20 24/"
+
+      }
+    },
+
+    {//Animation
+
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+        "SuanNi_mist": "34/34 34 34 34 34 35 35 35 35 35 35/34",
+        "SuanNi_shine": "16/16 16 16 16 17 17 17 17 17 17 17 17 17 17 17 18 18 18 18 18 18 18 19 19 19 19 19 19 19 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20/20",
+       "SuanNi_black": "16/16 16 16 16 17 17 17 17 17 17 17 17 17 17 17 21 21 21 21 21 21 21 22 22 22 22 22 22 22 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23/23",
+	"suanni_sleep": "51/51/51"
+      }
+    },
+    {//arms
+      "LogName": "Weapons",
+       "Action": "Include",
+      "FromFile": "assets/Weapons/weapon.json"
+    },
+    {//Weapon 2
+      "LogName": "Weapons",
+       "Action": "Include",
+      "FromFile": "assets/Weapons/weapon2.json"
+    },
+    {//Movie Dialogue
+      "LogName": "Weapons",
+       "Action": "Include",
+      "FromFile": "assets/Dialogue/Movies.json"
+    },
+	
+	{//portrait
+
+      "LogName": "SuanNi Portraits",
+      "Action": "Load",
+      "Target": "Portraits/SuanNi",
+      "FromFile": "assets/Portraits/SuanNi.png"
+
+    },
+
+    {//Walking Chart
+
+      "LogName": "SuanNi Sprites",
+      "Action": "Load",
+      "Target": "Characters/SuanNi",
+      "FromFile": "assets/Characters/SuanNi.png"
+
+    },
+    {//Winter and beachwear
+      "LogName": "SuanNi - Seasonal",
+      "Action": "Load",
+      "Target": "Portraits/SuanNi_winter, Characters/SuanNi_winter, Portraits/SuanNi_beach, Characters/SuanNi_beach",
+      "FromFile": "Assets/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
+    },
+    {//journey
+
+      "LogName": "SuanNi Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/SuanNi",
+      "FromFile": "assets/Schedules/schedule.json"
+    },
+	
+    {//Fixed-point dialogue
+
+      "LogName": "Schedule Dialogue",
+      "Action": "Load",
+      "Target": "Strings/schedules/SuanNi",
+      "FromFile": "assets/Dialogue/SuanNiScheduleDialogue.json"
+
+    },
+	
+    {//dialogue
+
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/SuanNi",
+      "FromFile": "assets/Dialogue/SuanNiDialogue.json"
+
+    },
+
+    {//Post-marriage conversation
+      "LogName": "Marriage Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueSuanNi",
+      "FromFile": "assets/Dialogue/SuanNimarriageDialogue.json"
+    },	   
+    {//Wedding Location
+      "LogName": "Weddings",
+      "Action": "EditData",
+      "Target": "Data/Weddings",
+      "Fields": {
+        "Attendees": {
+          "SuanNi": {
+            "Id": "SuanNi",
+            "Condition": null,
+            "Setup": "SuanNi 31 67 0",
+            "Celebration": null,
+            "IgnoreUnlockConditions": false
+          }
+        }
+      }
+    },
+
+	
+{//Location of each festival
+  "LogName": "Egg Festival",
+  "Action": "EditData",
+  "Target": "Data/Festivals/spring13",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters"],
+        "Value": "SuanNi 22 74 2",
+        "Delimiter": "/"
+         },
+        {
+            "Operation": "Append",
+            "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+            "Value": "SuanNi 36 64 3",
+                        "Delimiter": "/"
+        },
+     ],
+ },
+ {
+  "LogName": "Flower Dance",
+  "Action": "EditData",
+  "Target": "Data/Festivals/spring24",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters"],
+        "Value": "SuanNi 27 42 2",
+        "Delimiter": "/"
+         },
+        {
+            "Operation": "Append",
+            "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+            "Value": "SuanNi 23 22 3",
+                        "Delimiter": "/"
+        },
+     ],
+ },
+ {
+  "LogName": "Luau",
+  "Action": "EditData",
+  "Target": "Data/Festivals/summer11",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters"],
+        "Value": "SuanNi 12 39 2",
+        "Delimiter": "/"
+         }
+     ],
+ },
+ {
+  "LogName": "Dance of the Moonlight Jellies",
+  "Action": "EditData",
+  "Target": "Data/Festivals/summer28",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters"],
+        "Value": "SuanNi 63 16 3",
+        "Delimiter": "/"
+         },
+     {
+            "Operation": "Append",
+            "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+            "Value": "SuanNi 13 34 1",
+                        "Delimiter": "/"
+        },
+     ],
+ },
+ {
+  "LogName": "Stardew Valley Fair",
+  "Action": "EditData",
+  "Target": "Data/Festivals/fall16",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters"],
+        "Value": "SuanNi 21 56 1",
+        "Delimiter": "/"
+         }
+     ],
+ },
+ {
+  "LogName": "Stardew Valley Fair",
+  "Action": "EditData",
+  "Target": "Data/Festivals/fall27",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters"],
+        "Value": "SuanNi 23 62 2",
+        "Delimiter": "/"
+         }
+     ],
+ },
+ {
+  "LogName": "Festival of Ice",
+  "Action": "EditData",
+  "Target": "Data/Festivals/winter8",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters"],
+        "Value": "SuanNi 63 24 2",
+        "Delimiter": "/"
+         },
+        {
+            "Operation": "Append",
+            "Target": [ "Entries", "Main-Event_additionalCharacters" ],
+            "Value": "SuanNi 64 39 2",
+                        "Delimiter": "/"
+        },
+     ],
+ },
+ {
+  "LogName": "Feast of the Winter Star",
+  "Action": "EditData",
+  "Target": "Data/Festivals/winter25",
+  "TextOperations": [
+      {
+       "Operation": "Append",
+       "Target": [ "Entries", "Set-Up_additionalCharacters"],
+        "Value": "SuanNi 15 96 2",
+        "Delimiter": "/"
+         }
+     ],
+
+},
+ //Festival Dialogue
+ 
+	{ //Easter
+	  "LogName": "Egg Festival - Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/spring13",
+      "Entries": {
+        "SuanNi": "I didn't know you had this custom. $1#$b# It's really interesting. $1#$e# If I have the chance, I'd like to try it. $1"
+      }
+    },
+    {
+	  "LogName": "Egg Festival - Spouse Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/spring13",
+      "Entries": {
+        "SuanNi": "I could secretly tell you where the eggs are. $1#$b#But I think it's better not to. $1#$e#I still remember the first time you participated in this festival. Who could have imagined what would happen now? $1"
+      },
+      "When": {
+        "Spouse": "SuanNi"
+      }
+    },
+	
+	//Flower Dance Festival
+    {
+	  "LogName": "Flower Dance - Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/spring24",
+      "Entries": {
+        "SuanNi": "Looking for me?! $7#$e#Ahem.....Sorry, I...was a little surprised. $7"
+      }
+    },
+    {
+	  "LogName": "Flower Dance - Spouse Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/spring24",
+      "Entries": {
+        "SuanNi": "@, you are here too. $1#$b#I really like this atmosphere, where people's emotions are intertwined. $1#$b#It is really warm. $1"
+      },
+      "When": {
+        "Spouse": "SuanNi"
+      }
+    },
+    
+	//Summer Celebration
+	{
+	  "LogName": "Luau - Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/summer11",
+      "Entries": {
+        "SuanNi": "I had some conversation with the gentleman next to me. $1#$e#Western techniques are very new to me. $1#$e#It seems that you are already familiar with dealing with such transcendent beings. $1",
+       }
+    },       
+	{
+	  "LogName": "Luau - Spouse Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/summer11",
+      "Entries": {
+        "SuanNi": "Do you have to go fishing during this festival? $1#$e#Did you add catnip to that pot of soup? Strange...$1#$e#Want to enjoy the sea breeze with me? Be careful not to catch a cold. $4"
+	  },
+	  "When": {
+		"Spouse": "SuanNi"
+      }
+    },       	
+		
+	//Dance of the Moonlight Jellyfish
+    {
+	  "LogName": "Dance of the Moonlight Jellies - Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/summer28",
+      "Entries": {
+        "SuanNi": "I was just thinking about some past events. Sorry, don't mind me...$2#$e#%Suan Ni is immersed in his thoughts, so don't disturb him.",
+      }
+    },        
+	{
+	  "LogName": "Dance of the Moonlight Jellies - Spouse Dialogue 1",
+      "Action": "EditData",
+      "Target": "data/festivals/summer28",
+      "Entries": {
+        "SuanNi": "If there is a chance, I will take you to see the sea in my hometown. $4#$b#%The tail of the Suanni hooks your arm and gently strokes it.......#$e#Stay with me for a while, okay? $1"
+      },
+	  "When": {
+		"Spouse": "SuanNi"
+      }
+    },     	
+    {
+	  "LogName": "Dance of the Moonlight Jellies - Spouse Dialogue 2",
+      "Action": "EditData",
+      "Target": "data/festivals/summer28",
+      "Entries": {
+        "SuanNi": "This jellyfish seems to contain some kind of energy, so beautiful and dazzling. $1#$b#Same as you....$4#$e#%The blush on Suanni's face is a little obvious under the light, but this is the proof that he loves you, isn't it?"
+      },
+      "When": {
+		"Spouse": "SuanNi"
+      }
+    },
+	
+	//Stardew Valley Celebration
+    {
+	  "LogName": "Stardew Valley Fair - Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/fall16",
+      "Entries": {
+        "SuanNi": "I felt a lot of emotions. $1#$b# It was refreshing. $1",
+           }
+    },   
+	{
+	  "LogName": "Stardew Valley Fair - Spouse Dialogue 1",
+      "Action": "EditData",
+      "Target": "data/festivals/fall16",
+      "Entries": {
+        "SuanNi": "I have seen all the preparations these days, thank you for your hard work. $1#$e# Go and get ready, I'm right here. $1",
+      },
+      "When": {
+		"Spouse": "SuanNi"
+      }
+    },   	
+    {
+	  "LogName": "Stardew Valley Fair - Spouse Dialogue 2",
+      "Action": "EditData",
+      "Target": "data/festivals/fall16",
+      "Entries": {
+        "SuanNi": "%Suanni rubbed your head. #$b# Go and prepare for the exhibition. $1"
+      },
+      "When": {
+		"Spouse": "SuanNi"
+      }
+    },
+    {
+	  "LogName": "Stardew Valley Fair - Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/fall27",
+      "Entries": {
+        "SuanNi": "This kind of festival is really wonderful. $1#$e#If you are scared, you can call me to go with you. $1#$e#",
+           }
+    },   
+	{
+	  "LogName": "Stardew Valley Fair - Spouse Dialogue ",
+      "Action": "EditData",
+      "Target": "data/festivals/fall27",
+      "Entries": {
+        "SuanNi": "Do you need me to carry you? $1#$b# If you are not afraid, can I not carry you? $1#$e#% You seem to feel a breath of air around you. #$b# Don't worry, I will accompany you. $1",
+      },
+      "When": {
+		"Spouse": "SuanNi"
+      }
+    },   	
+
+	
+	//Snow Festival
+    {
+	  "LogName": "Festival of Ice - Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/winter8",
+      "Entries": {
+        "SuanNi": "Don't worry about my body, this fur is very warm. $1"
+      }
+    },
+    {
+	  "LogName": "Festival of Ice - Spouse Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/winter8",
+      "Entries": {
+        "SuanNi": "Can I have a taste of the fish I caught? $1#$b#You ask me why? $1#$b#Because of you. $4"
+      },
+      "When": {
+		"Spouse": "SuanNi"
+      }
+    },
+	//Winter Star Feast
+    {
+      "LogName": "Feat of the Winter Star - Dialogue",
+	  "Action": "EditData",
+      "Target": "data/festivals/winter25",
+      "Entries": {
+        "SuanNi": "You can find me like this? $2#$b#Okay, I just...just remembered some old things. $2#$e#In my hometown, there is also a festival with a strong sense of the same. $2#$b#Hometown...$2"
+      }
+    },
+    {
+	  "LogName": "Festival of the Winter Star - Spouse Dialogue",
+      "Action": "EditData",
+      "Target": "data/festivals/winter25",
+      "Entries": {
+        "SuanNi": "Sorry, did I make you worry? $2#$b#I just want to be alone. $1#$b#Don't worry, I already have you. $1#$e#Stay with me for a while, just a while...$1"
+      },
+      "When": {
+		"Spouse": "SuanNi"
+      }
+    },
+
+    {//SuanNi Engagment Dialogue
+      "LogName": "Engagement Dialogue",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "SuanNi0": "I...I don't know what to say...$2#$b#As soon as I saw you, I couldn't suppress my emotions. $1#$e#@...Thank you for being willing to approach me in the beginning. $4#$b#If you don't leave, I will never give up. $4",
+        "SuanNi1": "@,The agreed date is coming soon, and I am a little worried. $2#$b#Will being with me bring you trouble? After all, in the eyes of outsiders, I am not a human being. $2#$b#%The ears of the Suanni drooped, and the pair of golden pupils seemed to be much dimmer. $2#$e#Sorry, I shouldn't say this. $1#$b#%The Suanni smiled at you, and you could clearly see the worry and anxiety hidden in it."
+      }
+    },
+    { //Additional dialogue
+	  "LogName": "Egg Festival - Dialogue",
+      "Action": "EditData",
+      "Target": "data/ExtraDialogue",
+      "Entries": {
+        "ExtraDialogue_Mines_PlayerKilled_SuanNi_Spouse": "I sensed that your life force seemed very weak...$2#$b# so I found it...$2#$b# Fortunately I made it in time. $2#$b# Fortunately I made it in time......",
+        "ExtraDialogue_Mines_PlayerKilled_SuanNi_NotSpouse": "Are you okay? #$b#The mist told me your situation. Don't worry, you are saved now.",
+        "SummitEvent_Dialogue1_SuanNi": "I am thinking back to the past %year...",
+        "SummitEvent_Dialogue1B_SuanNi": "The time I spent with you seems so precious at this moment. $1",
+        "SummitEvent_Dialogue2_SuanNi": "…Just to think, we’ve come this far.",
+        "SummitEvent_Dialogue3_SuanNi": "I used to want to escape from everything here. $2#$b#But now it's different. $1#$b#I have you, my friends in Stardew Valley. $1#$b#And this scenery at the moment. $1#$b#Everything is so harmonious and warm.\"pause 500/speak SuanNi \"What I want to say is. $1#$b#Thank you, @. $1#$b#For being with me for so long....$4\"",
+        "PurchasedItem_SuanNi_QualityLow": "Hmm... I received a {2}. #$b# It seems you are selling it? #$b# But his spirit seems to have begun to dissipate...",
+        "PurchasedItem_SuanNi_QualityHigh": "Hmm... I received a {2}. #$b# It seems you are selling it? #$b# It tastes pretty good. $1#$b# I couldn't help but taste it. $1",
+        "PurchasedItem_SuanNi": "The {2} in Pierre's shop seemed to be in good condition and well preserved.",
+        "PurchasedItem_1_QualityHigh_SuanNi_Willy": "@, your fish is very good and delicious. $1",
+        "PurchasedItem_2_QualityHigh_SuanNi_Willy": "I often go to Willy's place. The fish you sold him last time was delicious. $1",
+        "PurchasedItem_3_QualityHigh_SuanNi_Willy": "Did you give that {2} to Willy? #$b# It's really good quality. $1",
+        "PurchasedItem_4_QualityHigh_SuanNi_Willy": "You are here, @. $1#$b#I also tasted the {2} you sold to Willy, it tastes good. $1",
+        "PurchasedItem_SuanNi_QualityHigh_Willy": "The {2} you gave me last time was the flavor I liked. $1",
+        "PurchasedItem_1_QualityLow_SuanNi_Willy": "Um.....@#$b#The fish you gave Willy...#$b#Never mind, it's okay. $1",
+        "PurchasedItem_2_QualityLow_SuanNi_Willy": "This {2}, the spirit seems to be dissipating. #$b#Did you sell it to Willy?",
+        "PurchasedItem_3_QualityLow_SuanNi_Willy": "@, there seemed to be some problem with the {2} you gave Willy last time.",
+        "PurchasedItem_4_QualityLow_SuanNi_Willy": ".......$2#$b#Sorry, I was thinking about this {2} thing.",
+        "PurchasedItem_SuanNi_QualityLow_Willy": "The {2} you gave me last time seemed to taste a little strange.",
+      }
+    },
+    { //Wedding quotes
+      "Action": "EditData",
+      "Target": "strings/StringsFromCSFiles",
+      "Entries": {
+        "Utility.cs.5371": "@...Suan Ni...#$b#As the mayor of Pelican Town and the person in charge of marriage in this area, I now officially declare that your marriage is settled! $h",
+        "Utility.cs.5377": "@...Suan Ni...#$b#As the mayor of Pelican Town and the person in charge of marriage in this area, I now officially declare that your marriage is settled! $h",
+
+        "Utility.cs.5367": "When @ first came to Pelican Town, no one knew if he could fit in with this community...#$b# But from today on, @ will become an inseparable part of the town! $h#$b# I am honored to announce that on this day of {1}{0}, @ and Suanni are getting married.",
+        "Utility.cs.5369": "When @ first came to Pelican Town, no one knew if she could adapt to this community...#$b# But from today on, @ will become an inseparable part of the town! $h#$b# I am honored to announce that on this day of {1}{0}, @ and Suanni are getting married."
+      },
+      "When": {
+        "Relationship:SuanNi": "Engaged, Married"
+      }
+    },  
+  {//Spouse Room
+      "Action": "Load",
+      "Target": "Maps/SuanNi_SpouseRoom",
+      "FromFile": "assets/Location/SpouseRoomSuanNi.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/SuanNi_SpousePatio",
+      "FromFile": "assets/Location/SpousePatioSuanNi.tmx"
+    },
+   {
+
+      "LogName": "Mail",
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "SuanNiWoods1": "@台鉴: ^The turbid mist, the worried flowers, my mind is in a mess, and my thoughts are thick. ^I wonder if you have some free time these days, can you come to the secret forest and listen to my talk. ^I am looking forward to it. ^ -Fu Ni",
+        "SuanNiTown1": "@.....Please....come...as soon as possible....^Community.....center..^I...am unbalanced.....my power...is expanding...........^.....^ -Suan..",
+        "SuanNiTown2": "@Dear Taiwan: ^I was lucky to have you help me yesterday. ^My power has been restored to balance. From now on, I will look within myself. ^I have enclosed a thank you gift.^  -Suanni%item object 74 1 %%",
+	}
+    },
+
+    {
+
+      "LogName": "Send Mail",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "9876510/f SuanNi 1500/x SuanNiWoods1": "null",
+        "9876511/f SuanNi 2000/x SuanNiTown1": "null",
+	}
+    },	
+    { //2 Heart Event Explaining the Peach Tree
+
+      "LogName": "SuanNiEvent",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "9876501/F/f SuanNi 500/t 600 2400": "Cloth/49 32/farmer 49 36 0 SuanNi 49 32 0/skippable/pause 1500/emote SuanNi 12/pause 1500/move farmer 0 -3 0/emote SuanNi 12/pause 1500/faceDirection SuanNi 2/speak SuanNi \"Sorry, I didn't notice you approaching....$2\"/speak SuanNi \"$q -2 null#What do you want from me?#$r -2 25 dx#I feel like you're worried about something.#$r -2 25 dx1#Are you having any difficulties?\"/pause 800/speak SuanNi \"I just....remembered some things from the past. $2\"/emote SuanNi 40/pause 500/speak SuanNi \"Do you know why I stayed under this tree? $2#$b#There was also such a peach tree in my old yard. #$b#%The golden eyes of Suanni dimmed, and he didn't seem to restrain his emotions towards you. #$b#This town is nice, really nice, and the residents are very friendly to me. $2#$b#But...\"/pause 800/speak SuanNi \"I miss my peach tree a little. $2#$b#I'm sorry, I shouldn't say this to you. $2#$b#Just think of me talking to myself. #$b#%The lion in front of you gave you an apologetic smile, then turned into mist and floated away.\"/globalFade/viewport -1000 -1000/end invisible SuanNi"
+	}
+
+    },
+
+    { //4 Heart Event, Meeting at the Beach
+
+      "LogName": "SuanNiEvent",
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "9876502/F/e 9876501/f SuanNi 1000/t 2000 2400": "spaceMusic/44 35/farmer 40 35 1 SuanNi 44 35 1/skippable/pause 2500/faceDirection SuanNi 3/pause 500/speak SuanNi \"@?It's late, is there anything you haven't finished yet? $1\"/move SuanNi -1 0 3/pause 500/speak SuanNi \"Or we can do it tomorrow. I will take you back first. $1\"/move farmer 2 0 1/question fork1 \"#I just came to see you. #What are you doing at the beach?\"/fork whatDo/pause 200/speak SuanNi \"Come and see me....?$7\"/emote SuanNi 16/pause 500/speak SuanNi \"Sorry, I'm a little surprised...$7#$b#After all, this kind of thing rarely happens. $1\"/pause 500/speak SuanNi \"Although the people in the town are very kind to me, you and I are from two different races after all...$2#$b#I can feel...their worries and fears about me. $2#$b#Don't worry, I'm not blaming anyone, and this kind of thing won't affect me...$1#$b#But...\"/pause 500/speak SuanNi \"I want to talk to someone like this sometimes. $4#$b#@, thank you. $4#$b#Now, let me take you home. $1\"/globalFade/viewport -1000 -1000/end",
+	"whatDo": "pause 200/speak SuanNi \"I?#$b#I'm just enjoying the breeze at the beach. $1\"/move SuanNi 0 1 2/pause 500/speak SuanNi \"Stardew Valley is very beautiful, I think I can understand your grandfather's intention. $1\"/move farmer 0 1 2/pause 1000/speak SuanNi \"Everything here is full of rich spirits. Sorry, you can think of it as another kind of magic of the forest. $1\"/pause 1000/speak SuanNi \"How about you? Do you like this place now? $1#$b#Love every tree and grass here, as well as the waves on the beach. $1\"/pause 1000/speak SuanNi \"You don't have to tell me the answer.$1#$b# I think that your presence here has explained a lot.$1#$b# After all....$1\"/pause 1000/speak SuanNi \"The night sea in Stardew Valley is really beautiful. $1#$b#Okay. $1#$b#Now let me take you home. $1\"/globalFade/viewport -1000 -1000/end"
+	}
+
+    },
+
+    { //6 Heart Event, Secret Forest tells the story
+
+      "LogName": "SuanNiEvent",
+      "Action": "EditData",
+      "Target": "Data/Events/Woods",
+      "Entries": {
+        "9876503/F/f SuanNi 1500/e 9876501 9876502/c 1/t 600 2400/n SuanNiWoods1": "winter1/21 25/farmer 27 15 3 SuanNi 21 15 3/skippable/pause 1000/faceDirection SuanNi 1/pause 500/speak SuanNi \"@, have you read my letter? $7#$b#Sorry, sorry, I didn't expect you to come so soon. $7#$b#When I saw you, it was a little difficult to say what I wanted to say...$1\"/pause 1000/move farmer -4 0 3/pause 500/speak SuanNi \"But you probably have a lot of questions now...\"/pause 500/speak SuanNi \"Do you know why I chose the secret forest? $1#$b#Because I woke up here at the beginning...$2#$b#% Suanni seemed to recall something, and his face gradually became a little sad...#$b#Let me tell you about the past...$2#$b#At the beginning, I just conducted a simple patrol. #$b#I found a few little demons and saw the area of ​​spiritual disorder. #$b#These are all normal.....#$b#But I always felt that something was wrong. #$b#So I thought, walk more, at least I can feel at ease. $2#$b#Then....A tree demon appeared in front of me.\"/pause 500/move SuanNi 0 3 2/move SuanNi -6 0 2/move farmer 0 4 3/move farmer -6 0 3/speak SuanNi \"He was wailing, he was sobbing. #$b#He was begging for my help...$2#$b#I took him back to the furnace...$2#$b#Just like what Suanni did...$2#$b#%At this point, Suanni's voice seemed to become softer, and you couldn't quite hear the last sentence.\"/pause 500/speak SuanNi \"We lived in peace for a long time. #$b#Until one night, the tree demon came to me alone. #$b#He seemed a little hesitant, his eyes full of hesitation and longing. #$b#In the end, he gave me a seed...$2#$b#A tree seed that he had hidden in his palm for a long time. $1\"/pause 500/speak SuanNi \"After that.....When I opened my eyes the next day, I was here...#$b#At first, when I woke up, I thought I was under someone's spell. #$b#Until I met you, I realized that I was no longer in the same place...$2\"/question fork1 \"#Can't you go back? #What on earth are you?\"/fork way/pause 200/speak SuanNi \"I... am trying to find a solution, but...$2#$b#% The lion glanced at you secretly, with some inexplicable emotions in his eyes. #$b# There are still things here that I can't let go...$2#$b# I have come here without saying goodbye, and I can't leave without saying goodbye.\"/pause 500/speak SuanNi \"This is not polite...$2#$b#This is not polite...$2#$b#%You see the ears of the lion in front of you drooping down. For some reason, you seem to be able to sense some of the lion's thoughts...#$b#So, it's okay for me to live here for a while. $1\"/pause 1000/speak SuanNi \"But if I find a way to go home in the future, if you are willing...$1#$b#I want to take you to visit my hometown. $1#$b#By the way, I wonder if you recognize the seeds that the tree demon gave me. $1[MysticTreeSeed]#$b#Sure enough, this seed is the product of your world...$2#$b#I understand......$2#$b#Thank you,@, for listening to me$1\"/pause 1000/globalFade/viewport -1000 -1000/end dialogue SuanNi \"I really want to stay a little longer....$2\"",
+	"way": "speak SuanNi \"Did you ask this question after all? $1#$b#If I were to put it in your terms. $1#$b#I am an orc...a dragon-lion orc. $1#$b#And according to what my hometown calls me. $1#$b#I am a sacred beast, a sacred beast that protects the land and is worshipped by people. $1#$b#They call me Suanni. $2#$b#%I don't know if it's your illusion, but when the lion in front of you talked about Suanni, a trace of sadness appeared on his face. #$b#But in fact, none of this matters. #$b#What matters is what kind of existence I am in your heart. $1#$b#I am a scary and cold black lion. $1#$b#Or I am a good guy worth communicating with. $1#$b#I think you should have your own judgment. $1\"/pause 500/speak SuanNi \"If you just want to know my story, we still have some time to chat. $1#$b#Until...I find a way to go home. $2#$b#But until I finish talking to you, I will stay in this town. $1#$b#And if you are interested in my hometown from what I said, even just a little bit...$2#$b#Can you go back with me to my hometown to have a look...$1#\"/pause 500/speak SuanNi \"Okay, okay, let's not talk about this for now. $1#$b#I have something I want to show you. $1#$b#This is the seed that the tree demon gave me. I wonder if you recognize it. $1[MysticTreeSeed]#$b#Sure enough, this seed is a product of your world...$2#$b#I understand......$2#$b#That's all for today, thank you,@, for listening to me$1\"/pause 1000/globalFade/viewport -1000 -1000/end warpOut"
+	}
+
+    },
+
+    { //8 Heart Event Light and Dark
+
+      "LogName": "SuanNiEvent",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "9876504/F/f SuanNi 2000/e 9876501 9876502 9876503/w rainy/t 610 1800/n SuanNiTown1": "LavaMine/39 18/farmer 39 24 0 SuanNi 39 15 2/skippable/animate SuanNi false true 400 24 25 24/pause 1000/move farmer 0 -5 0/speak SuanNi \"Don't... come over here! @! $8#$b#% The appearance of the Suanni seemed a little strange, as if it was in great pain and squatting on the ground. #$b# Just stand over there, I... I am in danger now. $8\"/pause 500/speak SuanNi \"Sorry to meet you in such a strange way...$2#$b#I just...want to see you. $8#$b#%You can clearly see the tense muscles of Suanni, as if he has used up all his strength just talking to you. #$b#Please just stand there and accompany me...$8\"/pause 500/speak SuanNi \"I can feel... your heartbeat seems to be getting faster... $2#$b# Sorry... are you worried about me? $8#$b# I must be in a mess right now. $2#$b#% Suanni seemed to want to smile at you, but in an instant his expression was covered by pain.\"/pause 500/speak SuanNi \"I...$2#$b#In fact, I was not a Suanni at the beginning. I was just...$8#$b#a black lion demon in the forest...$8#$b#a demon that was excluded and abandoned. $2#$b#Until he brought me back to the furnace town...$8#$b#%Suanni's face flashed with guilt, as if he was lost in memories. #$b#So far, I have been suppressing the power and nature of being a demon every day. $8#$b#But now it seems...$8#$b#has the opposite effect...$2#$b#The demonic energy rushed into my body, and my divine power was also disordered. $8#$b#Maybe this is my fate...$3#$b#%I don't know if it's your illusion, but when he said this, Suanni's eyes flashed with an inaudible scarlet.\"/question fork1 \"#Why not release your demonic power and embrace your nature? #Stay true to yourself and suppress your nature!\"/fork sig/pause 500/speak SuanNi \"Release my nature? I... never seem to have tried it before. $8#$b#% Suan Ni seemed to be stunned, and stood up from the ground with great effort.\"/stopAnimation SuanNi 0/speak SuanNi \"No...it should be said that I dare not try...$2#$b#I don't want to go back to the past, and I don't want to touch the power of that time. $8#$b#But since it is what you want. $2#$b#I am willing to try...$8#$b#%Suan Ni closed his eyes, and you could feel that a violent energy began to gather on Suan Ni...\"/stopMusic/pause 200/animate SuanNi false false 600 16 17 17 21 22 23/pause 3600/stopGlowing/stopAnimation SuanNi 23/playMusic winter1/speak SuanNi \"%With the end of this power fluctuation, the lion in front of him almost changed its appearance#$b#%The chaos seemed to settle down, and the demonic power took the upper hand. #$b#Hmm.......$6#$b#How do I look? $6#$b#%You don't know how to describe the lion in front of you now, wild? Aggressive? But with a hint of familiar restraint and forbearance. #$b#@, are you afraid? $6#$b#No, you don't have to be afraid of me, I am still the Suanni you are familiar with. $6#$b#However, after accepting the demon power, I figured out some things. $6#$b#@, you are really delicious $6#$b#%Suanni laughed, compared with the past，There was a hint of arrogance and madness in that smile. $6#$b#But thank you, @, for coming to see me. $6#$b#Without you, I might not be able to hold on. $6#$b#I might even perish here. $6#$b#But fortunately I have you, @. $6#$b#Then next, it's time for me to repay you...$6\"/mail SuanNiTown2/globalFade/viewport -1000 -1000/end invisible SuanNi",
+        "sig":"speak SuanNi \"You are right, @.....$8#$b#How can I just go with the flow like this. $8#$b#%Suan Ni struggled to stand up from the ground.\"/stopAnimation SuanNi 0/speak SuanNi \"How can you succumb to wildness? $8#$b#% Suanni closed his eyes, and you could feel a strange energy gathering in him....\"/stopMusic/pause 200/animate SuanNi false false 600 16 17 17 18 19 20/pause 3600/stopGlowing/stopAnimation SuanNi 20/playMusic winter1/speak SuanNi \"%Golden patterns continued to spread from the body of Suanni#$b#%The chaos seemed to be suppressed, and the lion in front of him also changed its appearance. #$b#How do I...$5#$b#look? $5#$b#%You don't know how to describe the lion in front of you, sacred? Majestic? In any case, it is different from the past. #$b#Don't worry, I am still me, the Suanni in your heart. $5#$b#%The lion in front of you seems to be able to see through your thoughts and soothes your worries with gentle words. #$b#The energy seems to have calmed down, thank you, @. $5#$b#If it weren't for you, I might not be able to hold on. $5#$b#I might even perish here. $5#$b#But fortunately you are here. $5#$b#%Suanni smiled at you, and his gentle smile seemed to be more sacred than before. #$b#So, do you want to walk with me now? $5\"/mail SuanNiTown2/globalFade/viewport -1000 -1000/end invisible SuanNi"
+
+	}
+
+    },
+
+   { //10 Heart Events Relaxation
+
+      "LogName": "SuanNiEvent",
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+        "9876505/F/f SuanNi 2500/e 9876501 9876502 9876503 9876504/t 610 1800/w sunny/": "junimoStarSong/64 16/farmer 72 16 3 SuanNi 64 16 1/skippable/pause 500/speak SuanNi \"@, I was still wondering where you went today. $7#$b# I wanted to ask you out, but I didn't expect to see you here, $1\"/move farmer -6 0 3/speak SuanNi \"Thank you for what happened last time. $1#$b#If you have nothing to do today, would you like to walk with me? $4#$b#I have a lot to say, and I have been holding it back for a long time. $1\"/pause 200/move SuanNi -11 0 1/speak SuanNi \"Since you came to Stardew Valley, you seem to be always busy. $1#$b#I have seen you out late many times...$2#$b#Your bag is full but you are rushing home. $2#$b#So it seems rare for you to have free time like now. $1\"/pause 200/viewport move -2 0 5000/move farmer -11 0 3/pause 200/speak SuanNi \"Come to think of it, I have been in Stardew Valley for quite some time. $1#$b# I have also participated in many festivals with you. $1#$b# But it is funny to say that in the beginning... I did not trust anyone. $2#$b# Strange environment, strange things, strange people. $1#$b# But fortunately, I have you, you all. $1#$b# You always show the greatest kindness to everything. $1#$b# Including me, a person of unknown origin...$1#$b# beast”。\"/pause 200/move SuanNi -2 0 0/move SuanNi -0 -4 3/move SuanNi -7 0 1/speak SuanNi \"I still remember meeting you at the beach. $1#$b#The evening breeze carried the smell of the sea. $1#$b#Everything was so beautiful and warm. $4#$b#Perhaps it was from then on that I always paid more attention to your figure. $1#$b#Tough, motivated, and compassionate. $1#$b#So strong, and so gentle. $1\"/viewport move -2 -1 5000/move farmer -4 0 0/move farmer 0 -3 0/move farmer -7 0 0/faceDirection SuanNi 2/speak SuanNi \"@. $2#$b#Thank you...$1#$b#for always being by my side. $4#$b#Although I have always told myself. $2#$b#I will return to my hometown one day. $2#$b#But once I see you. $1#$b#I always find it difficult to control the emotion in my heart...$2\"/pause 200/move SuanNi -6 0 0/move SuanNi 0 -2 2/speak SuanNi \"I want to know more about you...I want to see more of you. $4#$b#I want to feel your warmth and breath. $4#$b#I also want to be with you all the time. $4#$b#What kind of feeling is this? $2#$b#Does this feeling bother you?...$1\"/viewport move -1 0 3000/move farmer -3 0 0/move farmer 0 -3 2/question fork1 \"#No, I feel the same way about you. #Sorry, I thought we were just good friends.\"/fork no/speak SuanNi \"！ ！ $7#$b#I...I...$7#$b#I thought it was just my wishful thinking. $1#$b#%The tail of the Suanni was swinging violently because of joy. This is the first time you have seen it do this. #$b#Sorry, I am a little excited. $1#$b#It's just, @. $4#$b#I am very happy, really happy. $4\"/move SuanNi 0 1 2/move SuanNi 3 0 0/speak SuanNi \"%The lion in front of you hugged you tightly...#$b#%The pleasant woody scent and soft fur all expressed each other's gentle feelings. #$b#%And from now on, you will both have each other...\"/globalFade/viewport -1000 -1000/end dialogue SuanNi \"%The lion in front of you touches your head and gives you a gentle smile.\"",
+        "no":"speak SuanNi \"........$2#$b#Yes....We are just good friends. $1#$b#I am overthinking....$2#$b#I am sorry for talking to you for so long. I think I have delayed you for too long.....$1#$b#Let's...talk again when we have a chance. $1#$b#Goodbye....$1\"/friendship SuanNi -2000/globalFade/viewport -1000 -1000/end invisible SuanNi",
+	}
+
+    },
+   { //12 Heart Events Daily
+
+      "LogName": "SuanNiEvent",
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+        "9876506/F/f SuanNi 3000/e 9876501 9876502 9876503 9876504 9876505/t 600 2400/": "sweet/34 23/farmer 34 20 2 SuanNi 33 25 2/skippable/pause 500/emote SuanNi 32/pause 800/faceDirection SuanNi 0/speak SuanNi \"@! $7#$b#If I had known you were coming here, I should have asked you to come with me. $4\"/pause 200/move farmer 0 5 2/faceDirection SuanNi 2/emote farmer 20/pause 1500/speak SuanNi \"After being with you. $1#$b#I often come here to walk. $1#$b#Maybe it's because of the scenery here. $1#$b#But I think more, it's because of you. $4\"/pause 200/speak SuanNi \"I still remember...$1#$b#the excitement and excitement in my heart when you said that here. $1#$b#For a long, long time....$2#$b#you are the only one who left such emotions in my heart. $1#$b#But I also know that being with me may bring you a lot of controversy. $2#$b#But I...$2#$b#don't want to deceive myself. $2#$b#nor do I want to give up this...precious emotion.\"/pause 200/emote SuanNi 12/pause 200/speak SuanNi \"That's why I told you all those embarrassing things...$2#$b#. $4#$b# Fortunately, the ending is always good. $4#$b#% Suanni gave you a gentle smile, just like he had done to you countless times before, warm and beautiful.。\"/pause 500/faceDirection SuanNi 1/speak SuanNi \"Actually, I didn't have much feelings for Stardew Valley before. $2#$b#Because I always felt that I was just a passer-by. $2#$b#No matter what kind of intersection we had, after I left. $2#$b#It would also be gone. $2#$b#Although Stardew Valley is beautiful, it is not my home. $1\"/pause 500/faceDirection SuanNi 2/pause 300/speak SuanNi \"But you are different. $1#$b#You made me really nostalgic in Stardew Valley. $1#$b#You also made me really have a home in Stardew Valley. $1#$b#So@, on the road ahead...$1#$b#I will always be with you...always. $4\"/pause 200/stopAnimation SuanNi 28/pause 200/speak SuanNi \"%Suanni hugged you and kissed you. You could feel the full of love hidden in the touch of his soft mane.....#$b#%\"/globalFade/viewport -1000 -1000/end",
+	}
+
+    },
+   { //14 Heart Event Gifts
+
+      "LogName": "SuanNiEvent",
+      "Action": "EditData",
+      "Target": "Data/Events/Woods",
+      "Entries": {
+        "9876507/F/f SuanNi 3500/e 9876501 9876502 9876503 9876504 9876505 9876506/t 600 1400/": "winter3/40 20/farmer 43 27 1 SuanNi 49 27 1/skippable/pause 500/emote SuanNi 12/pause 800/speak SuanNi \"他会喜欢这个吗...$2\"/pause 200/move farmer 4 0 1/pause 200/faceDirection SuanNi 3/emote SuanNi 16/pause 200/speak SuanNi \"@! $7#$b#You....why are you here? $7#$b#%You saw a panicked expression on Suanni's face, and hid his hands behind his back unnaturally.。\"/pause 200/speak SuanNi \"Ahem... I just remembered to come to the secret forest. $7#$b# What are you doing here? I... I'll help you. $1#$b#% Although the other party tried to cover up something, it was obvious that the big lion in front of him really couldn't lie. #$b#% The tail swung unnaturally, and the strange blush on his face...#$b#% Everything was telling that this matter was not so simple。\"/pause 200/emote SuanNi 28/pause 200/speak SuanNi \"As expected, I can't hide it from you...$2#$b#I saw you go down to the mines sometimes. $1#$b#Although the monsters in the mines can't hurt you...$2#$b#I'm still worried...$1#$b#so I thought...to make you a weapon. $1#$b#I've actually been making it for a while...$2#$b#but...$1#$b#I don't know what kind of weapon you like. $1#$b#\"/pause 200/speak SuanNi \"Do you remember the disorder of my power before? #$b#Don't worry, I'm fine now. $1#$b#@, I think I can try to use this power to forge a weapon for you. $1#$b#Do you prefer divine power or demonic power? $1\"/question fork1 \"#divinepower. #demonpower。\"/fork inquiry/pause 500/speak SuanNi \"I understand。\"/pause 500/animate SuanNi false true 500 36 36 37 37 37 38 38 38 39 39 39 39/pause 6000/stopAnimation SuanNi 43/speak SuanNi \"%You seem to feel a constant flow of air towards the lion in front of you. In just a few breaths, the other party has changed its appearance. #$b#%The golden dragon horns and textures are glittering, but what is more eye-catching is the ball of light condensed in its hand. #$b#%You seem to vaguely see the shape of a sword inside。\"/pause 500/speak SuanNi \"It's done! $5#$b#% Suanni seemed very happy, and the sword fell into your hands.。[SuanNi_Sword]#$b#How about calling this sword Yunyun? $11#$b#As long as you carry it, I will know whether your current situation is safe or not. $5#$b#%Suan Ni rubbed your head, the touch of its fur was very nice. #$b#But even with this sword, please be sure to pay attention to your own safety. $5#$b#I... don't want to lose you so soon. $5#$b#Okay, okay, you already know the secret. $5#$b#Then can you leave your time to me from now on? $5#$b#%The lion in front of you took your hand. #$b#First of all, let me try the sword. $5\"/globalFade/viewport -1000 -1000/end",
+        "inquiry":"speak SuanNi \"I understand。\"/pause 500/animate SuanNi false true 500 36 36 37 37 37 40 40 40 41 41 41 41/pause 6000/stopAnimation SuanNi 42/speak SuanNi \"%You seem to feel a constant flow of air towards the lion in front of you. In just a few breaths, the other party has changed its appearance. #$b#%Blood-red lines are winding up, but what is more eye-catching is the ball of light condensed in its hand. #$b#%You seem to vaguely see the shape of a dagger inside。\"/pause 500/speak SuanNi \"Done! $10#$b#% Suanni seemed very happy and handed the dagger in his hand to you.。[SuanNi_dagger]#$b#This dagger...how about calling it Nightmare Mist. $6#$b#As long as you carry it, I believe nothing can threaten you. $6#$b#%Suan Ni rubbed your head and smiled evilly. #$b#Of course, you can use it on me. $6#$b#Although it can't hurt me, it's still a kind of fun. $10#$b#Okay, okay, now that you know the secret. $10#$b#Then can you leave your time to me? $10#$b#%The lion in front of you took your hand. $10#$b#Don't worry...just try the dagger. $10#$b#Or if you want to try other weapons first, that's fine. $10#$b#%Suan Ni took your hand and placed it on his exposed body. #$b#%The hot body temperature made your heart beat faster for some reason. #$b#Let's go. If you want to watch it, we can go home and watch it slowly. $10\"/globalFade/viewport -1000 -1000/end",
+	}
+
+    },
+
+
+  ]
+}
+		
+		

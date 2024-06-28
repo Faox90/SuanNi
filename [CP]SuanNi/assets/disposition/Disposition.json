@@ -1,0 +1,162 @@
+{
+  "Changes": [
+{
+   "Action": "EditData",
+   "Target": "Data/Characters",
+   "Entries": {
+
+    "SuanNi": {//Change the English variable name here
+     "DisplayName": "Suanni",//Change Chinese name here
+     "BirthSeason": 0,//Season of birth, 0 is spring, 1 is summer, 2 is autumn, 3 is winter
+     "BirthDay": 8,//Birthday, 1-28
+     "HomeRegion": "Town",//Is it in town, ginger island or desert (usually no need to change)
+     "Language": "Default",//Ignore
+     "Gender": "Male",//Gender, Male 0, Female 1, Other 2
+     "Age": "Adult",//Age, don't change it. If you have to change it, 0 is an adult, 1 is a teenager, and 2 is a child.
+     "Manner": "Polite",//Behavior
+     "SocialAnxiety": "Outgoing",//social contact
+     "Optimism": "Negative",//Feeling
+     "IsDarkSkinned": false,//Black skin changed to true
+     "CanBeRomanced": true,//Whether marriage is allowed, true yes false no
+     "LoveInterest": "",//The official name, no need to change
+     "Calendar": "AlwaysShown",//Is it in the calendar
+     "SocialTab": "UnknownUntilMet",//Question mark until we meet
+     "SocializeConditions": null,//Do not move
+     "CanSocialize": true,
+     "CanReceiveGifts": true,
+     "CanGreetNearbyCharacters": true,
+     "CanCommentOnPurchasedShopItems": true,
+     "CanVisitIsland": true,
+     "IntroductionsQuest": true,
+     "ItemDeliveryQuests": true,
+     "PerfectionScore": true,
+     "EndSlideShow": "MainGroup",
+     "FriendsAndFamily": "",//Friends and Family
+     "UnlockConditions": null,//Do not move
+     "SpawnIfMissing": true,//Do not move
+     "FlowerDanceCanDance": true,
+     "SpouseAdopts": true,
+     "SpouseWantsChildren": true,
+     "SpouseGiftJealousy": true,
+     "TextureName": null,
+     "Appearance": [
+        {
+         "Id": "SuanNiWinter",
+         "Season": "Winter",
+         "Portrait": "Portraits/SuanNi_winter",
+         "Sprite": "Characters/SuanNi_winter",
+         "Precedence": -100,
+         "Weight": 0
+        },
+            {
+         "Id": "SuanNiBeach",
+         "Portrait": "Portraits/SuanNi_beach",
+         "Sprite": "Characters/SuanNi_beach",
+         "IsIslandAttire": true,
+         "Precedence": -120,
+         "Weight": 0
+            },
+],
+	//Home
+     "Home": [
+      {
+       "Id": "SuanNiHome",
+       "Condition": null,
+       "Location": "Town",//Birth Point
+       "Tile": {
+        "X": 49,//X coordinate
+        "Y": 32//Y coordinate
+       },
+       "Direction": "down"//Facing
+      }
+     ],
+//It should be the size of an elf.
+     "Size": {
+      "X": 16,
+      "Y": 32
+     },
+	//Spouse Room
+     "SpouseRoom": {
+     "MapAsset": "SuanNi_SpouseRoom",
+     "MapSourceRect": {
+      "X": 0,
+      "Y": 0,
+      "Width": 6,
+      "Height": 9
+     }
+     },
+	//Spouse Terrace
+      "SpousePatio": {
+      "MapAsset": "SuanNi_SpousePatio",
+      "MapSourceRect": {
+       "X": 0,
+       "Y": 0,
+       "Width": 4,
+       "Height": 4
+      },
+	"SpriteAnimationFrames": [],
+      },
+          "SpouseFloors": [],
+          "SpouseWallpapers": [],
+	//Trash bin
+     "DumpsterDiveFriendshipEffect": -25,
+     "DumpsterDiveEmote": 40,
+
+	//Winter Star Feast Gifts
+     "WinterStarGifts": [
+{
+      "Condition": null,
+      "Id": "Default",
+      "ItemId": null,
+      "RandomItemId": [
+         "(O)454",
+         "(O)908",
+         "(O)341",
+         "(O)727",
+         "(O)210",
+	 "(O)681",
+         "(O)908"
+         ],
+      "MaxItems": null,
+      "MinStack": -1,
+      "MaxStack": -1,
+      "Quality": -1,
+      "ObjectInternalName": null,
+      "ObjectDisplayName": null,
+      "ToolUpgradeLevel": -1,
+      "IsRecipe": false,
+      "StackModifiers": null,
+      "StackModifierMode": "Stack",
+      "QualityModifiers": null,
+      "QualityModifierMode": "Stack",
+      "ModData": null,
+      "PerItemCondition": null
+}
+      ],
+      "WinterStarParticipant": null,
+	//respite
+      "Breather": true,
+      "BreathChestRect": null,
+      "BreathChestPosition": null,
+      "Shadow": null,
+      "EmoteOffset": {
+        "X": 0,
+        "Y": 0
+      },
+
+     "ShakePortraits": [],
+     "KissSpriteIndex": 28,
+     "KissSpriteFacingRight": true,
+     "HiddenProfileEmoteSound": null,
+     "HiddenProfileEmoteDuration": -1,
+     "HiddenProfileEmoteStartFrame": 16,
+     "HiddenProfileEmoteFrameCount": 4,
+     "HiddenProfileEmoteFrameDuration": 200.0,
+     "FormerCharacterNames": [],
+     "CustomFields": {}
+
+    }
+   }
+  }
+  ]
+}

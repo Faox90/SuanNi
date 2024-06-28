@@ -1,0 +1,234 @@
+{
+  "Changes": [
+{
+"Action": "EditData",
+"Target": "Data/ConcessionTastes",
+"Entries": {
+	"Name": "SuanNi",
+	"LovedTags": [
+	"french fries",
+	"Chocolate Popcorn",
+],
+	"LikedTags": [
+	"Apple Slices",
+	"Salty",
+        "Gourmet"
+],
+	"DislikedTags": [
+        "Panzanella Salad",
+	"Joja",
+        "Candy",
+        "Fatty",
+	"Sweet"
+]
+}
+},
+  {
+  "Action": "EditData",
+  "Target": "Data/MoviesReactions",
+  "Entries": {
+  "SuanNi":{
+      "NPCName": "SuanNi",
+      "Reactions": [
+		   {
+                    "Tag": "spring_movie_0",
+                    "Response": "love",
+                    "Whitelist": [],
+                    "SpecialResponses": {
+                      "BeforeMovie": {
+                      "ResponsePoint": null,
+                      "Script": "",
+                      "Text": "It's really exciting to watch a movie with you. $1"
+                    },
+                    "DuringMovie": {
+                      "ResponsePoint": null,
+                      "Script": "/emote SuanNi 28/message \"Suanni looked a little sad\"/speak SuanNi \"I've been through this before.$2\"",
+                      "Text": ""
+                    },
+                    "AfterMovie": {
+                      "ResponsePoint": null,
+                      "Script": "",
+                      "Text": "A very interesting movie. I quite like the little tree. $1#$b# What do you think, @. $1"
+                    }
+                  },
+                  "ID": "reaction_0"
+                },
+
+                   {
+                    "Tag": "summer_movie_0",
+                    "Response": "like",
+                    "Whitelist": [],
+                    "SpecialResponses": {
+                        "BeforeMovie": {
+                            "ResponsePoint": null,
+                            "Script": "",
+                            "Text": "I'm here, I shouldn't be late. $1"
+                        },
+                        "DuringMovie": {
+                            "ResponsePoint": null,
+                            "Script": "/emote SuanNi 16/message \" Suanni seemed fascinated。\"",
+                            "Text": ""
+                        },
+                        "AfterMovie": {
+                            "ResponsePoint": null,
+                            "Script": "",
+                            "Text": "Is this the world of the West? #$b# is dangerous. $2#$b# is also fascinating. $1"
+                        }
+                    },
+                    "ID": "reaction_1"
+                },
+
+                   {
+                    "Tag": "fall_movie_0",
+                    "Response": "like",
+                    "Whitelist": [],
+                    "SpecialResponses": {
+                        "BeforeMovie": {
+                            "ResponsePoint": null,
+                            "Script": "",
+                            "Text": "Is this movie special? $1#$b# horror movie? #$b# Does it mean there will be something very scary? $1"
+                        },
+                        "DuringMovie": {
+                            "ResponsePoint": null,
+                            "Script": "/emote SuanNi 16/message \"Suanni held your hand。\"",
+                            "Text": ""
+                        },
+                        "AfterMovie": {
+                            "ResponsePoint": null,
+                            "Script": "",
+                            "Text": "So this is a horror movie. $1#$b# Quite interesting. $1#$b# No. $1#$b# Should I act like I'm scared? $2"
+                        }
+                    },
+                    "ID": "reaction_2"
+                },
+
+                   {
+                    "Tag": "winter_movie_0",
+                    "Response": "love",
+                    "Whitelist": [],
+                    "SpecialResponses": {
+                        "BeforeMovie": {
+                            "ResponsePoint": null,
+                            "Script": "",
+                            "Text": "The cinema seems to be a little warmer than outside. $1#$b#@, would you like something to eat? $1"
+                        },
+                        "DuringMovie": {
+                            "ResponsePoint": null,
+                            "Script": "/emote SuanNi 28/message \"Suanni seems a little worried。\"/speak SuanNi \"Can they survive? $2\"",
+                            "Text": ""
+                        },
+                        "AfterMovie": {
+                            "ResponsePoint": null,
+                            "Script": "",
+                            "Text": "I was a little worried when I saw the middle part. $2#$b# But fortunately, the ending is still happy. $1#$b# Although it may be a bit cliché. $2#$b# But I still like a happy ending. $1"
+                        }
+                    },
+                    "ID": "reaction_3"
+                },
+
+                   {
+                    "Tag": "spring_movie_1",
+                    "Response": "love",
+                    "Whitelist": [],
+                    "SpecialResponses": {
+                        "BeforeMovie": {
+                            "ResponsePoint": null,
+                            "Script": "",
+                            "Text": "I like things related to nature. $1#$b#Especially now that it is spring. $1"
+                        },
+                        "DuringMovie": {
+                            "ResponsePoint": null,
+                            "Script": "/emote SuanNi 20/message \"Suanni looked very happy。\"",
+                            "Text": ""
+                        },
+                        "AfterMovie": {
+                            "ResponsePoint": null,
+                            "Script": "",
+                            "Text": "Nature is really amazing. $1#$b#Next time there is a movie of this type. $1#$b#I will invite you to watch it. $1"
+                        }
+                    },
+                    "ID": "reaction_4"
+                },
+
+
+		   {
+                    "Tag": "summer_movie_1",
+                    "Response": "dislike",
+                    "Whitelist": [],
+                    "SpecialResponses": {
+                        "BeforeMovie": {
+                            "ResponsePoint": null,
+                            "Script": "",
+                            "Text": "@, do you like this type of movie? $1#$b# I saw the poster and it seems a bit...$2#$b#nothing. $1"
+                        },
+                        "DuringMovie": {
+                            "ResponsePoint": null,
+                            "Script": "/emote SuanNi 40/message \"Suanni seems to be frowning。\"",
+                            "Text": ""
+                        },
+                        "AfterMovie": {
+                            "ResponsePoint": null,
+                            "Script": "",
+                            "Text": "Well...$2#$b# Then I will go back first. $1#$b#"
+                        }
+                    },
+                    "ID": "reaction_5"
+                },
+
+                    
+                    {
+                    "Tag": "fall_movie_1",
+                    "Response": "like",
+                    "Whitelist": [],
+                    "SpecialResponses": {
+                      "BeforeMovie": {
+                        "ResponsePoint": null,
+                        "Script": "",
+                        "Text": "Um...#$b# Why do they all look scared when they come out?。"
+                      },
+                      "DuringMovie": {
+                        "ResponsePoint": null,
+                        "Script": "/message \"Suanni seems to have discovered something。\"",
+                        "Text": ""
+                      },
+                      "AfterMovie": {
+                        "ResponsePoint": null,
+                        "Script": "",
+                        "Text": "I think I know why. $1#$b#Very interesting movie. $1#$b#But I'm skeptical$1"
+                      }
+                    },
+                    "ID": "reaction_6"
+                  },
+
+                {
+                   "Tag": "winter_movie_1",
+                   "Response": "love",
+                   "Whitelist": [],
+                   "SpecialResponses": {
+                     "BeforeMovie": {
+                       "ResponsePoint": null,
+                       "Script": "",
+                       "Text": "This movie doesn't seem to be a product of this era. $1#$b#I am very interested in it. $1"
+                     },
+                     "DuringMovie": {
+                       "ResponsePoint": null,
+                       "Script": "/message \"Suanni seems to have begun to immerse himself in the plot。\"",
+                       "Text": ""
+                     },
+                     "AfterMovie": {
+                       "ResponsePoint": null,
+                       "Script": "",
+                       "Text": "It's really interesting. $1#$b#The theme of the movie is also worth exploring. $1#$b#@, if it were you.....#$b#what would you choose? $1"
+                        }
+                    },
+                    "ID": "reaction_7"
+                }
+            
+            ]
+        }
+  }
+  },
+
+	
+  ]
+}
